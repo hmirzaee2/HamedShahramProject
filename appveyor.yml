@@ -1,5 +1,5 @@
 deploy:
-provider: WebDeploy
-name: TestEnv - Web Deploy
-on:
-branch: master
+	provider: Environment
+	name: TestEnv
+	on:
+	branch: master
