@@ -1,5 +1,5 @@
 deploy:
   - provider: Environment
-	name: TestEnv
-	on:
-	branch: master
+    name: TestEnv
+    on:
+       branch: master
