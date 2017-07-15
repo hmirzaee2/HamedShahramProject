@@ -1,0 +1,16 @@
+version: 1.0.{build}
+nuget:
+  project_feed: true
+before_build:
+- cmd: nuget restore
+build:
+  verbosity: minimal
+artifacts:
+- path: /
+  name: TestArtifact
+  type: WebDeployPackage
+deploy:
+  - provider: Environment
+    name: TestEnv
+    on:
+       branch: master
